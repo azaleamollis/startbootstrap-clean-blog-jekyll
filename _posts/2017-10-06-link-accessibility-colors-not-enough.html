@@ -1,0 +1,139 @@
+---
+layout: post
+title:  Link Accessibility - Colors Are Not Enough
+subtitle: Hyperlinks inside text blocks shouldn't be solely distinguished by color.
+date: 2017-10-06
+background: /img/posts/2017-10-06/cover.jpg
+redirect_from: www.annalytic.com/link-accessibility-colors-not-enough
+---
+
+<p>According to a less frequently mentioned accessibility principle, hyperlinks inside text blocks shouldn't be solely distinguished by color. Not only because users with low vision, color deficiency, and other visual impairments can't always recognize these links, but it's also easier for regular users to skim through the content if links are better emphasized.</p>
+
+<p>However, it's not always easy to find a good solution for link design, that doesn't harm aesthetics. And, it's also possible to overdo link design by using too many signifiers that confuse the user.</p>
+
+<h2>Body text links</h2>
+
+<p>When we speak about links, we usually think of the classic blue links with the underline, however there are actually different kinds of links on most websites. I've found these main types:</p>
+<ol>
+    <li>Body text links</li>
+    <li>Headline and subtitle links</li>
+    <li>Menu links</li>
+    <li>Buttons</li>
+    <li>Image links</li>
+    <li>Video links</li>
+    <li>Audio links</li>
+</ol>
+
+<p>In this article, I will only examine the first group, body text links. Don't read it as a guideline but rather as an experiment for understanding what can be done for better link accessibility.</p>
+
+<h2>What WCAG 2.0 says</h2>
+
+<p>Ironically, the <a href="https://www.w3.org/TR/WCAG20/" target="_blank">WCAG 2.0 docs</a> (accessibility guidelines of the W3C) are not very well structured, so I rather use <a href="https://webaim.org/techniques/hypertext/link_text" target="_blank">WebAIM's guideline on links and hypertext</a>, that's much easier to search.</p>
+
+<p>According to the section, WCAG 2.0 has two additional requirements for body text links:</p>
+<ol>
+    <li>The link text must have a 3:1 contrast ratio from the surrounding non-link text.</li>
+    <li>The link must present a "non-color designator" (typically the introduction of the underline) on both mouse hover and keyboard focus.</li>
+</ol>
+
+<h2>Default browser styling</h2>
+
+<p>Browsers have a default styling that you can check for any web page by disabling all styles with the Web Developer Toolbar.</p>
+
+<h4><i>Example: Chrome's default link styling</i></h4>
+
+<p>For instance, this is how the <a href="https://developer.mozilla.org/en-US/#" target="_blank">homepage of the Mozilla Developer Network</a> looks like in Chrome:</p>
+
+<figure><a href="https://developer.mozilla.org/en-US/#" target="_blank"><img class="img-fluid" src="/img/posts/2017-10-06/basic-chrome-styling.jpg" alt="Basic Chrome Styling"></a></figure>
+
+<p>It's a very basic styling for sure, but it's still styling: the underlined blue links are well-known and easily recognizable by internet users. It's not a coincidence that the Nielsen-Norman Group also considers blue the safest link color choice (see the related <a href="https://www.nngroup.com/articles/clickable-elements/" target="_blank">Beyond Blue Links: Making Clickable Elements Recognizable</a> article).</p>
+
+<h2>Non-color designators</h2>
+<br>
+<h3>Underline</h3>
+
+<p>WebAIM doesn't recommend to remove the underline using CSS, as "users are accustomed to see links underlined". Sadly, many of the biggest websites don't follow this principle through and they don't only remove the underline from the default link style but also from the <code>:hover</code> state.</p>
+
+<p>Why do they do so? Most likely for aesthetical reasons, however underlined links don't necessarily have to be plain-looking.</p>
+
+<h4><i>Example: Bloomberg</i></h4>
+
+<p>For instance, Bloomberg uses the <code>border-bottom</code> CSS property to mimic an underline—but in a different color (link text is black, underline is blue).</p>
+
+<figure><a href="https://www.bloomberg.com/news/articles/2017-09-14/apple-is-said-to-discuss-3-billion-stake-in-bain-s-toshiba-bid" target="_blank"><img class="img-fluid" src="/img/posts/2017-10-06/bloomberg-link-signifier.jpg" alt="Bloomberg border bottom as link signifier"></a></figure>
+
+<p>Perhaps Bloomberg's links could further benefit from bold letters, but it's a good example that underline can be used for links creatively, not just the usual way.</p>
+
+<h4><i>Example: The Verge</i></h4>
+
+<p>The Verge has a different approach to body text link underlines. The underline is present at the default state, however it's removed on hover. Parallelly with the removal of the underline, the color also subtlely changes, from pink to magenta (however this color change is barely recognizable).</p>
+
+<figure><a href="https://www.theverge.com/2017/9/14/16306298/apple-iphone-x-screen-notch" target="_blank"><img class="img-fluid" src="/img/posts/2017-10-06/the-verge-link-underline.jpg" alt="Underlined links in The Verge"></a></figure>
+
+<p>The presence of the underline in the default state helps readers easily notice the link. And, when they hover the link, the state change is instantly visualized by the disappearing underline. An unusual choice, for sure, but, in fact, follows the accessibility principle of non-color designators.</p>
+
+<h3>Icons</h3>
+
+<p>You can also help users recognize links by adding tiny icons next to them. For example, some news sites add a video starting icon next to body text links that lead to videos (however, these days embedding videos is a more widely used practice).</p>
+
+<h4><i>Example: WebAIM</i></h4>
+
+<p>For a better example, WebAIM adds a small icon after all external links. This is an excellent practice, not simply because the icon serves as an extra visual signifier, but also because external links are distinguished from internal links in an elegant way.</p>
+
+<figure><a href="http://webaim.org/techniques/hypertext/link_text#text" target="_blank"><img class="img-fluid" src="/img/posts/2017-10-06/webaim-external-link-icon.jpg" alt="WebAIM external link icon"></a></figure>
+
+<p>Font Awesome also has an <a href="https://fontawesome.com/icons/external-link-alt?style=solid&from=io" target="_blank">external link icon</a> you can quickly add to your external links.</p>
+
+<figure><a href="http://fontawesome.io/icon/external-link/" target="_blank"><img class="img-fluid" src="/img/posts/2017-10-06/font-awesome-external-link.jpg" alt="Font Awesome external links"></a></figure>
+
+<h3>Link text</h3>
+
+<p>As screen readers notify users when they come across a link, it's not recommended to use phrases like "link to" or "follow this link" in the link text.</p>
+
+<p>However, providing a link text that describes the purpose of the link helps accessibility, especially because content shouldn't only be made accessible to screen reader users but also to users with different <a href="https://webaim.org/articles/cognitive/" target="_blank">cognitive disabilities</a>.</p>
+
+<p>WCAG 2.0 even has a recommendation on how to <a href="https://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H30.html" target="_blank">provide proper link texts</a>, with a handful of useful examples (mainly for image links, though).</p>
+
+<h4><i>Example: Gov.uk</i></h4>
+
+<p>If you want an example for properly done link text I would mention the Gov.uk website that publishes governmental information in the UK. For instance, have a look at their <a href="https://www.gov.uk/set-up-business" target="_blank">Set up a business"</a> page.</p>
+
+<figure><a href="https://www.gov.uk/set-up-business" target="_blank"><img class="img-fluid" src="/img/posts/2017-10-06/gov.uk-link-texts.jpg" alt="Gov.uk Link Texts"></a></figure>
+
+<p>Take a look at, for instance, the <i>"Find out more about being a sole trader and how to register"</i> line. Note how they put the anchor tag on the part that describes the purpose of the link, and not on the action verb (i.e. "Find out more").</p>
+
+<h3>The title attribute</h3>
+
+<p>The role of the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title" target="_blank">title global attribute</a> in link accessibility is an interesting question. When you add it to a link, the extra information appears on hover somewhere around the link.</p>
+
+<p>For instance, the following line of code:</p>
+
+<pre>
+&lt;a href="#" title="Extra information"&gt;Hover this link, don't click it.&lt;/a&gt;
+</pre>
+
+<p>looks like this: <a href="#" title="Extra information">Hover this link, don't click it.</a></p>
+
+<p>I've long thought that adding the <code>title</code> attribute to links is a good practice for accessibility, as the extra information helps users understand the purpose of the link. Moreover, when the <code>title</code> label appears on hover, it clearly indicates the presence of a clickable element. However, WCAG 2.0 has a slightly different view on the question.</p>
+
+<p>In their <a href="https://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H33.html" target="_blank">Supplementing link text with the title attribute"</a> document, they mention several accessibility problems. For example, the content of the <code>title</code> attribute isn't available to assistive technology users, and it also disappears after about five seconds in most user agents.</p>
+
+<p>On the whole, WCAG 2.0 doesn't advise against the usage of the <code>title</code> attribute in links but calls for cautious usage. One thing is sure, don't use <code>title</code> for important information that is not available otherwise, such as warnings. However, it's another question that if it can only be used for unimportant information is it worth using at all?</p>
+
+<h2>Link states</h2>
+
+<p>There are five different link states, represented by CSS pseudo-classes (click the links below for documentation).</p>
+<ol>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" target="_blank">:hover</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus" target="_blank">:focus</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:active" target="_blank">:active</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:visited" target="_blank">:visited</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:link" target="_blank">:link</a></li>
+</ol>
+
+<p>It's also an open question whether it is better for accessibility to style all link states differently or not. If you use different style rules for each state users are notified about every change, however is that always a good thing? Too many state changes can cause information overload confusion to the user.</p>
+
+<p>I tend to follow the "indicate the user interaction" principle, which means I use one style for the default link state and another one for the <code>:hover</code>, <code>:active</code>, and <code>:focus</code> states, but I can't tell if this is the best solution for accessibility. If you are interested in the topic more, have a look at this StackOverflow UX discussion on whether the <a href="https://ux.stackexchange.com/questions/73403/should-focus-and-hover-styles-be-the-same-or-distinct" target="_blank">styling of :focus and :hover should be the same or distinct</a>.</p>
+
+<p>However, there's an important thing you should follow by any means. Don't remove the dotted outline that browsers use for the <code>:focus</code> state, as tab navigation needs it to make the focused element visible. If you remove it keyboard users lose focus (literally). If you're annoyed by the default outline style <a href="https://a11yproject.com/posts/never-remove-css-outlines/" target="_blank">make it less obtrusive with extra styling</a>, but don't remove it.</p>
+<br>
