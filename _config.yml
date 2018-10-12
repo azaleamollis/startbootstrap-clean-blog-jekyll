@@ -13,6 +13,8 @@ github_username: azaleamollis
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
 #theme: jekyll-theme-clean-blog
 remote_theme: jekyll-theme-clean-blog
 paginate: 5
