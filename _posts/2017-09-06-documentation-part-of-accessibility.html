@@ -1,20 +1,20 @@
 ---
 layout: post
 title:  Software documentation is part of accessibility
-subtitle: About the two aspects of accessible documentation and how it affects your bottom line
+subtitle: How to create accessible technical documentation
 date:   2017-09-06
 background: /img/posts/2017-09-06/cover.jpg
 redirect_from: /documentation-part-of-accessibility/
 ---
-<p>We mostly discuss accessibility as a way to enable people with disabilities to use a tool (website, application, etc.) with as little information loss as possible. However, the accessibility needs of users who don't have any disabilities but experience other kinds of hardships are less widely discussed.<p>
+<p>We mostly discuss accessibility as a way to enable people with disabilities to use a website or application. However, the accessibility needs of users who don't have any disabilities but experience other kinds of hardships are less widely discussed.<p>
 
-<p>The lack of knowledge on a given subject is such a hardship. Therefore, providing quality technical documentation to users is an essential part of accessibility. In case of open-source tools, this is probably even more important. Here, users don't simply want to use the tool but many of them would also contribute to the code.</p>
+<p>The lack of knowledge on a given subject is such a hardship. Providing technical documentation that addresses this problem is also an essential part of accessibility, especially in the case of open-source development. Here, users don't only act as end-users but also might want to contribute to the code as developers.</p>
 
-<p>If you have ever had to use poorly documented software you know what I am talking about. Boring, badly structured, and user-hostile documentation can make people give up on a tool, just like an overly complicated purchasing process can result in shopping cart abandonment on eCommerce websites.</p>
+<p>If you have ever had to use poorly documented software you know what I'm talking about. Boring, badly structured, and user-hostile documentation can make people give up on a tool, just like an overly complicated purchasing process can result in shopping cart abandonment on eCommerce websites.</p>
 
 <h2>Two types of technical documentation</h2>
 
-<p>Essentially, there are two types of technical documentation (however, you might find more, for instance <a href="https://www.rhyous.com/2011/07/21/the-different-types-of-technical-documentation-for-software-and-why-each-is-important/" target="_blank">this article</a> mentions eight types):</p>
+<p>Essentially, there are two types of technical documentation:</p>
 <ol>
     <li>documentation created for end-users</li>
     <li>documentation created for developers</li>
@@ -22,17 +22,17 @@ redirect_from: /documentation-part-of-accessibility/
 
 <h3>End-user documentation</h3>
 
-<p>Companies tend to focus more on end-user documentation; you can find <a href="http://blog.screensteps.com/10-examples-of-great-end-user-documentation" target="_blank">nice and user-friendly examples</a> of this kind of docs. However, even the best designed end-user docs tend to lack crucial accessibility features (e.g. sufficient color contrast, or captioning for instructional videos).</p>
+<p>Companies tend to focus more on end-user documentation. You can find <a href="http://blog.screensteps.com/10-examples-of-great-end-user-documentation" target="_blank">nice and user-friendly examples</a> of this kind of docs. However, even the best-designed end-user docs might lack crucial accessibility features such as sufficient color contrast or closed captioning.</p>
 
 <p>For instance, have a look at Salesforce's <a href="https://www.salesforce.com/uk/learning-centre/" target="_blank">Learning Centre</a>. Overall, they did a great job with the docs. The information is well-structured and logical, and the docs don't use too much technical jargon.</p>
 
-<p>On the other hand, you will find that some of the necessary accessibility features are lacking. For example, links are distinguished only by color instead of providing a non-color designator such as an underline.</p>
+<p>However, if you take a closer look you will find that some crucial accessibility features are missing. For example, links are distinguished only by color rather than providing a <a href="http://localhost:4000/2017/10/06/link-accessibility-colors-not-enough.html">non-color designator</a> such as an underline.</p>
 
 <figure><a href="https://www.salesforce.com/uk/learning-centre/tech/cloudcomputing/" target="_blank"><img class="img-fluid" src="/img/posts/2017-09-06/salesforce-learning-centre.jpg" alt="Salesforce Learning Centre - Documentation Accessibility"></a></figure>
 
 <h3>Developer documentation</h3>
 
-<p>Technical documentations created for developers had been in a poor state for many years. They didn't simply lack accessibility features but also used unstructured text blocks, unreadable fonts, and small line height, lacked table of contents, and were visually unappealing on the whole.</p>
+<p>Most technical documentation created for developers had been in a poor state for many years. They didn't simply lack accessibility features but also used unstructured text blocks, unreadable fonts and small line height, lacked table of contents, and were visually unappealing on the whole.</p>
 
 <p>The rise of video tutorials made the scene of developer docs much better. At about the same time, well-designed documentations began to appear.</p>
 
@@ -40,33 +40,32 @@ redirect_from: /documentation-part-of-accessibility/
 
 <figure><a href="http://foundation.zurb.com/sites/docs/global.html" target="_blank"><img class="img-fluid" src="/img/posts/2017-09-06/foundation-docs.jpg" alt="Foundation Docs - Documentation Accessibility"></a></figure>
 
-<p><a href="https://www.atlassian.com/git/tutorials/what-is-version-control" target="_blank">Atlassian's Git Tutorials</a> constitute another good example for user-friendly developer documentation. They are just as well-structured as the Foundation Docs but also come with great explanatory illustrations (in SVG!) and a <a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" target="_blank">downloadable cheatsheet</a>.</p>
+<p><a href="https://www.atlassian.com/git/tutorials/what-is-version-control" target="_blank">Atlassian's Git Tutorials</a> constitute another good example of user-friendly developer documentation. They are just as well-structured as the Foundation Docs but also come with great explanatory illustrations (in SVG!) and a <a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" target="_blank">downloadable cheatsheet</a>.</p>
 
 <figure><a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud#copy-and-add-files" target="_blank"><img class="img-fluid" src="/img/posts/2017-09-06/atlassian-git-docs.jpg" alt="Atlassian Git Docs - Documentation Accessibility"></a></figure>
 
-<p>While both Foundation Docs and Git Tutorials present the information in a way that is accessible to users without any knowledge on the subject, you will find some accessibility problems in both, that may hinder users with disabilities (for instance, color contrast problems).</p>
+<p>Both Foundation Docs and Git Tutorials present the information in a way that is accessible to users without much knowledge on the subject. Still, both have some accessibility issues that might be a problem for users with disabilities (e.g. color contrast problems).</p>
 
 <h2>Two levels of documentation accessibility</h2>
 
-<p>Basically, documentation accessibility has two levels:</p>
+<p>Documentation accessibility has two levels that both end-user and developer docs should implement:</p>
 <ol>
-    <li>The docs need to be accessible for users without sufficient knowledge of the tool.</li>
-    <li>The docs need to be accessible for users who may have different disabilities.</li>
+    <li>They need to be accessible for users without sufficient knowledge of the tool.</li>
+    <li>They need to be accessible for users who might have different disabilities.</li>
 </ol>
 <p>The two levels can also intersect, as there can be users who are affected by both problems (i.e. don't have the sufficient knowledge plus have a disability).</p>
 
-<p>The three examples I mentioned in this article (Salesforce, Foundation, Atlassian) handle the first level of documentation accessibility really well, as they:</p>
+<p>The three examples I mentioned in this article (Salesforce, Foundation, Atlassian) handle the first level of documentation accessibility quite well, as they:</p>
 <ul>
-    <li>don't use technical jargon, or if they do they give the necessary explanation</li>
-    <li>provide menus / widgets / table of contents to ease navigation</li>
-    <li>structure pages (careful typography, enough white space, vertical rhythm, etc.)</li>
-    <li>provide illustrations or instructional videos</li>
-    <li>provide examples of usage, demos, or code snippets</li>
+    <li>don't use technical jargon, or when they do they give the necessary explanation,</li>
+    <li>provide menus/widgets/table of contents to ease navigation,</li>
+    <li>structure pages (careful typography, enough white space, vertical rhythm, etc.),</li>
+    <li>provide illustrations or instructional videos,</li>
+    <li>provide examples of usage, demos, or code snippets.</li>
 </ul>
-<p>They also partially implement the second level of accessibility, however you'll find issues here and there with things such as color contrast, link visibility, video captioning, etc.</p>
+<p>They also partially implement the second level of accessibility. However, you can still find issues here and there, such as color contrast, link visibility, or video captioning.</p>
 
-<h2>Can documentation be perfectly accessible?</h2>
+<h2>Wrapping Up</h2>
 
-<p>I don't know if perfectly accessible docs exist or not. If they do they should implement both levels of documentation accessibility. It's certainly not something easy to accomplish, as there are so many things to pay attention to.</p>
-
-<p>However, documentation accessibility is still an important part of accessibility. First, because we shouldn't exclude users with disabilities from adopting new technologies, but also because it greatly impacts how many people are willing to go the extra mile to pick up a new tool.</p>
+<p>Accessible technical documentation should implement both levels of documentation accessibility. It's certainly not something easy to accomplish, as there are so many things to pay attention to.</p>
+<p>Documentation accessibility is primarily important because we shouldn't exclude users with disabilities from adopting new technologies. But, it also hugely impacts how many users will be willing to go the extra mile to pick up a new tool.</p>
