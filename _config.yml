@@ -7,7 +7,7 @@ url: "https://www.annalytic.com" # the base hostname & protocol for your site, e
 twitter_username: azaleamollis
 github_username:  azaleamollis
 
-# Social Profiles
+# Social profiles
 twitter_username: azaleamollis
 github_username: azaleamollis
 
@@ -29,3 +29,6 @@ whitelist:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# Link settings
+permalink: /:title:output_ext
