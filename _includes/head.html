@@ -19,12 +19,11 @@
 
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <!-- Twitter cards -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site"    content="@{{ site.twitter_username }}">
   <meta name="twitter:title"   content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.subtitle }}">
-  <meta name="twitter:image" content="{{ page.background }}">
-
+  <meta name="twitter:image" content="{{ page.background | prepend: site.baseurl | replace: '//', '/' }} }}">
   <!-- end of Twitter cards -->
 
   <link rel='icon' href='https://www.annalytic.com/img/favicon.ico' type='image/x-icon'>
