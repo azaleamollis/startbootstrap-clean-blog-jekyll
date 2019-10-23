@@ -13,9 +13,9 @@ redirect_from:
 
 <p>Link accessibility is one of the most important aspects of usability. However, designers often don't understand what it takes to make links accessible. Most frequently, they only distinguish links by color, which makes it hard for users with visual disabilities to spot them in text blocks &mdash; even if high color contrast is used.</p> 
     
-<p>As a rule of thumb, accessible links shouldn't rely solely on colors. Partly because users with low vision, color deficiency, and other visual impairments can't always recognize this kind of link, but also because it's easier for regular users to skim through the content if links are better emphasized. </p>
+<p>As a rule of thumb, accessible links shouldn't rely solely on colors. Partly because users with low vision, color deficiency, and other visual impairments can't always recognize this kind of link, but also because it's easier for regular users to skim through the content if links are better emphasized.</p>
 
-<p>However, it's not always easy to find out how to create accessible links in a way that matches your website design. Besides, it's also possible to overdo it by using too many visual signifiers that might confuse the user.</p>
+<p>However, it's not always easy to find out how to create accessible links that match your website design. It's also possible to overdo it by using too many visual signifiers that might confuse the user.</p>
 
 <h2>Link types</h2>
 
@@ -44,7 +44,7 @@ redirect_from:
 
 <figure><img class="img-fluid" src="/img/posts/2017-10-06/basic-chrome-styling.jpg" alt="Basic Chrome Styling"></figure>
 
-<p>It's a very basic styling for sure, but it's still styling: the underlined blue links are well-known and internet users can easily recognize them. It's not a coincidence that the Nielsen-Norman Group also names blue the safest link color choice in its <a href="https://www.nngroup.com/articles/clickable-elements/" target="_blank">Beyond Blue Links: Making Clickable Elements Recognizable</a> article.</p>
+<p>It's a very basic styling for sure, but it's still styling: the underlined blue links are well-known and internet users can easily recognize them. It's not a coincidence that the Nielsen-Norman Group also names blue the safest link color choice in its "<a href="https://www.nngroup.com/articles/clickable-elements/" target="_blank">Beyond Blue Links: Making Clickable Elements Recognizable</a>" article.</p>
 
 <h2>Examples of accessible links</h2>
 
@@ -94,7 +94,7 @@ redirect_from:
 
 <h2>The controversial role of the <code>title</code> attribute</h2>
 
-<p>The role of the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title" target="_blank"><code>title</code> global attribute</a> in link accessibility is an interesting question. When you add it to a link, the extra information appears somewhere around the link when users hover it.</p>
+<p>The role of the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title" target="_blank"><code>title</code> global attribute</a> in link accessibility is an interesting question. If you add it to a link, the extra information appears somewhere around the link when users hover it.</p>
 
 <p>For instance, take the following line of HTML:</p>
 
@@ -106,7 +106,7 @@ redirect_from:
 
 <p>I've long thought that adding the <code>title</code> attribute to links is a good practice for accessibility, as the extra information helps users understand the purpose of the link.  However, WCAG 2.0 has a slightly different view on the question.</p>
 
-<p>On their <a href="https://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H33.html" target="_blank">Supplementing link text with the title attribute</a> page, they mention several accessibility problems. For example, the <code>title</code> attribute isn't available to assistive technology and keyboard-only users. Besides, it disappears after about five seconds in some user agents, which usually doesn't leave enough time to read it.</p>
+<p>On their "<a href="https://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H33.html" target="_blank">Supplementing link text with the title attribute</a>" page, they mention several accessibility problems. For example, the <code>title</code> attribute isn't available to assistive technology and keyboard-only users. Besides, it disappears after about five seconds in some user agents, which usually doesn't leave enough time to read it.</p>
 
 <p>On the whole, WCAG 2.0 doesn't advise against the <code>title</code> attribute but recommends careful usage. One thing is sure, never use <code>title</code> for important information that is not available in another form, such as warnings. On another note, if <code>title</code> can be used only for unimportant information, is it worth using at all?</p>
 
