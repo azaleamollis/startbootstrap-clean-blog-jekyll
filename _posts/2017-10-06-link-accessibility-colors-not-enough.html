@@ -13,7 +13,7 @@ redirect_from:
 
 <p>Link accessibility is one of the most important aspects of usability. However, designers often don't understand what it takes to make links accessible. Most frequently, they only distinguish links by color, which makes it hard for users with visual disabilities to spot them in text blocks &mdash; even if high color contrast is used.</p> 
     
-<p>As a rule of thumb, accessible links shouldn't rely solely on colors. Partly because users with low vision, color deficiency, and other visual impairments can't always recognize this kind of links, but also because it's easier for regular users to skim through the content if links are better emphasized. </p>
+<p>As a rule of thumb, accessible links shouldn't rely solely on colors. Partly because users with low vision, color deficiency, and other visual impairments can't always recognize this kind of link, but also because it's easier for regular users to skim through the content if links are better emphasized. </p>
 
 <p>However, it's not always easy to find out how to create accessible links in a way that matches your website design. Besides, it's also possible to overdo it by using too many visual signifiers that might confuse the user.</p>
 
@@ -40,7 +40,7 @@ redirect_from:
     <li>The link text must have a 3:1 contrast ratio from the surrounding non-link text.</li>
     <li>The link must present a "non-color designator" (typically the introduction of the underline) on both mouse hover and keyboard focus.</li>
 </ol>
-<p>Web browsers come with a default link styling that meet these requirements. You can check it out by disabling all additional CSS styles using the <a href="https://chrispederick.com/work/web-developer/" target="_blank">Web Developer</a> browser add-on or another dev tool. For example, this is how the homepage of the Mozilla Developer Network looks like in Chrome:</p>
+<p>Web browsers come with a default link styling that meets these requirements. You can check it out by disabling all additional CSS styles using the <a href="https://chrispederick.com/work/web-developer/" target="_blank">Web Developer</a> browser add-on or another dev tool. For example, this is how the homepage of the Mozilla Developer Network looks like in Chrome:</p>
 
 <figure><img class="img-fluid" src="/img/posts/2017-10-06/basic-chrome-styling.jpg" alt="Basic Chrome Styling"></figure>
 
@@ -48,7 +48,7 @@ redirect_from:
 
 <h2>Examples of accessible links</h2>
 
-<p>WebAIM doesn't recommend removing the underline using CSS, as "users are accustomed to see links underlined". Still, many of the biggest websites don't follow this principle of link accessibility. Many times, they don't only remove the underline from the default link state but also from the <code>:hover</code> styles.</p>
+<p>WebAIM doesn't recommend removing the underline using CSS, as "users are accustomed to see links underlined". Still, many of the biggest websites don't follow this principle of link accessibility. Many times, they don't only remove the underline from the default link state but also the <code>:hover</code> styles.</p>
 
 <p>But, why do they do that? Mainly for aesthetical reasons, however underlined links don't necessarily have to be plain-looking and boring.</p>
 
@@ -58,7 +58,7 @@ redirect_from:
 
 <figure><img class="img-fluid" src="/img/posts/2017-10-06/bloomberg-link-signifier.jpg" alt="Bloomberg border bottom as link signifier"></figure>
 
-<p>Perhaps Bloomberg's links could further benefit from bold letters, but it's a good example that underline can be used for links creatively, not just in the usual way.</p>
+<p>Perhaps Bloomberg's links could further benefit from bold letters, but it's a good example that underlines can be used for links creatively, not just in the usual way.</p>
 
 <h3>2. Reverse underline</h3>
 
@@ -82,7 +82,7 @@ redirect_from:
 
 <h3>4. Link text</h3>
 
-<p>As screen readers notify users when they come across a link, it's not recommended to use phrases such as "link to" or "follow this link" as link text. Instead, you should provide link texts that describe the main content of the link. It makes it easier for users to decide if they want to click the link, which is especially important for users with <a href="https://webaim.org/articles/cognitive/" target="_blank">cognitive disabilities</a>.</p>
+<p>As screen readers notify users when they come across a link, it's not recommended to use phrases such as "link to" or "follow this link" for the link text. Instead, you should provide link texts that describe the main content of the link. It makes it easier for users to decide if they want to click the link, which is especially important for users with <a href="https://webaim.org/articles/cognitive/" target="_blank">cognitive disabilities</a>.</p>
 
 <p>WCAG 2.0 even has a recommendation on how to <a href="https://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/H30.html" target="_blank">provide proper link texts</a>, with a handful of useful examples (mainly for image links, though).</p>
 
@@ -118,7 +118,7 @@ redirect_from:
 
 <p>Personally, I tend to create one style for the default link state, a second one for the <code>:hover</code>, <code>:active</code>, and <code>:focus</code> states, and sometimes a third one for <code>:visited</code> links. However, I still can't tell if this is the best solution for accessibility. If you are interested in the topic here's an <a href="https://ux.stackexchange.com/questions/73403/should-focus-and-hover-styles-be-the-same-or-distinct" target="_blank">interesting StackOverflow UX discussion</a> on whether the styling of the <code>:focus</code> and <code>:hover</code> states should be the same or distinct.</p>
 
-<p>However, there's an important thing you should keep in mind by all means. <strong>Don't remove the dotted outline that browsers use for the <code>:focus</code> state</strong>, as keyboard (tab) navigation doesn't work if the focused element is not visible. If you remove the dotted outline, keyboard users lose focus, literally. If you're annoyed by the default outline style <a href="https://a11yproject.com/posts/never-remove-css-outlines/" target="_blank">make it less obtrusive with extra styling</a>, but don't remove it.</p>
+<p>However, there's an important thing you should keep in mind by all means. <strong>Don't remove the dotted outline that browsers use for the <code>:focus</code> state</strong>. Keyboard (tab) navigation will be useless if the focused element is not visible on the screen. If you remove the dotted outline, keyboard users will literally lose focus. If you're annoyed by the default outline style <a href="https://a11yproject.com/posts/never-remove-css-outlines/" target="_blank">make it less obtrusive with extra styling</a>, but don't remove it.</p>
 
 <h2>Read more</h2>
 
