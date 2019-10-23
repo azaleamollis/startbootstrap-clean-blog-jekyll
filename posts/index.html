@@ -22,7 +22,12 @@ background: '/img/bg/page-bg/bg-post.jpg'
       {% else %}
         {{ site.author }}
       {% endif %}
-      on {{ post.date | date: '%B %d, %Y' }}</p>
+      on {{ post.date | date: '%b %d, %Y' }}
+      {% if post.last-update %}
+      <span class="meta">
+      (updated
+            on {{ post.last-update | date: '%b %d, %Y' }})</span>
+      {% endif %}</p>
   </article>
 
   <hr>
