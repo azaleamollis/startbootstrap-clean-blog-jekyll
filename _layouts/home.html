@@ -4,7 +4,7 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-  <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl }}')">
   {% else %}
     <header class="masthead">
     {% endif %}
@@ -45,7 +45,11 @@ layout: default
                 {{ site.author }}
               {% endif %}
               on
-              {{ post.date | date: '%B %d, %Y' }}</p>
+              {{ post.date | date: '%b %d, %Y' }}
+              {% if post.last-update %}
+              <span class="meta">(updated
+                on {{ post.last-update | date: '%b %d, %Y' }})</span>
+              {% endif %}</p>
           </article>
 
         {% endfor %}
