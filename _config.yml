@@ -1,14 +1,14 @@
 title: Annalytic
 email: azaleamollis@outlook.com
-description: Anna Monus | Full-stack technical writer
+description: Anna Monus | Technical writer & editor
 author: Anna Monus
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.annalytic.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: annalyticcom
+twitter_username: azaleamollis
 github_username:  azaleamollis
 
 # Social profiles
-twitter_username: annalyticcom
+twitter_username: azaleamollis
 github_username: azaleamollis
 
 # Build settings
