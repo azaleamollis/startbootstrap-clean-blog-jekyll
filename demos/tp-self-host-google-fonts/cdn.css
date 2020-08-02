@@ -1,0 +1,15 @@
+* {
+	background: lightyellow;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+.regular {
+	font-weight: 400;
+}
+.bold {
+	font-weight: 700;
+}
+.italic {
+	font-style: italic;
+}
