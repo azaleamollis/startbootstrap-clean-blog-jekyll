@@ -23,16 +23,16 @@ background: /img/bg/post-bg/css-subgrid-vs-nested-grid.png
 <p>You can use the <code>inherit</code> value for the <code>grid-template-columns</code> and <code>grid-template-rows</code> to create a nested grid, as follows:</p>
 <pre>
 .grid-item {
-	display: inherit:
+	display: inherit;
 	grid-template-columns: inherit;
 	grid-template-rows: inherit;
 }
 </pre>
 <h2>The difference between a subgrid and a nested grid</h2>
-<p>While the nested grid is still independent from the parent grid (we have two grids), the subgrid is the part of it (we have one grid) as the parent grid shares its rows, columns, and lines with it.</p>
+<p>While a nested grid is still independent from the parent grid (we have two grids), a subgrid is the part of it (we have one grid) as the parent grid shares its rows, columns, and lines with it.</p>
 <p>For instance, here's an example of a nested grid when being inspected with Google Chrome's grid inspector. As you can see, the parent and nested grid have independent tracks (marked with white vs red):</p>
 <figure><img class="img-fluid" src="/img/posts/2020-09-21/nested-css-grid.jpg" alt="Nested CSS grid"></figure>
 <p>While, if we create a subgrid, it uses the same grid tracks as the parent grid:</p>
 <figure><img class="img-fluid" src="/img/posts/2020-09-21/subgrid-css-grid-simulation.png" alt="CSS grid subgrid simulation"></figure>
 <h2>Read more</h2>
-<p>This post is the recap of my longer article about <a href="https://webdesign.tutsplus.com/articles/css-subgrid-features-syntax-and-the-problem-itll-solve--cms-33038" target="_blank">CSS subgrid</a> published on TutsPlus Web Design where I analyze the question in detail (the two screenshots above are from this piece as well). I also show how to simulate a subgrid without having access to the <code>subgrid</code> value.</p>
+<p>This post is the recap of my longer article about <a href="https://webdesign.tutsplus.com/articles/css-subgrid-features-syntax-and-the-problem-itll-solve--cms-33038" target="_blank">CSS subgrid</a> published on TutsPlus Web Design where I analyze the question in detail (the two screenshots above are from this piece as well). I also show there how to simulate a subgrid without having access to the <code>subgrid</code> value.</p>
