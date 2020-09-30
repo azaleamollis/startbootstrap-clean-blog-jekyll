@@ -25,10 +25,10 @@ background: /img/bg/post-bg/css-subgrid-vs-nested-grid.png
 	grid-template-rows: subgrid;
 }
 </pre>
-<p>Using this syntax, <code>.grid-item</code> will adopt the grid tracks (rows and columns) of the grid container for the area it spans over (in the above example, three columns vertically and two rows horizontally).</p>
+<p>Using this syntax, <code>.grid-item</code> will adopt the grid tracks (rows and columns) of the grid container for the area it spans over (in the above example, three columns vertically and two rows horizontally, defined by the <code>grid-row</code> and <code>grid-column</code> properties).</p>
 <h2>What is a nested grid?</h2>
 <p>A nested grid replicates the grid tracks of the parent grid, however it's still an independent grid.</p>
-<p>You can use the <code>inherit</code> value for the <code>grid-template-columns</code> and <code>grid-template-rows</code> to create a nested grid, as follows:</p>
+<p>You can use the <code>inherit</code> value for the <code>grid-template-columns</code> and <code>grid-template-rows</code> properties of one or more grid items to create a nested grid, as follows:</p>
 <pre>
 .grid-container {
 	display: grid;
@@ -43,7 +43,7 @@ background: /img/bg/post-bg/css-subgrid-vs-nested-grid.png
 	grid-template-rows: inherit;
 }
 </pre>
-<p>Using this syntax, <code>.grid-item</code> will copy the grid tracks of <code>.grid-container</code>, however, it will divide up its own area to five columns and three rows instead of being included in the grid layout of <code>.grid-container</code>.</p>
+<p>Using this syntax, <code>.grid-item</code> will copy the grid tracks of <code>.grid-container</code>. However, it will divide up its own area into five columns and three rows instead of being included in the grid layout of <code>.grid-container</code> as a subgrid.</p>
 <h2>The difference between a subgrid and a nested grid</h2>
 <p>While a nested grid is still independent of the parent grid (we have two grids), a subgrid is a part of it (we have one grid) as it gets included in the same layout &mdash; using the same rows, columns, and lines.</p>
 <p>For instance, here's an example of a nested grid when being inspected with Google Chrome's grid inspector. As you can see, the parent and nested grid have independent tracks (marked with white vs red):</p>
