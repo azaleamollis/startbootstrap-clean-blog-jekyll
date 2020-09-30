@@ -5,7 +5,8 @@ subtitle: A look into what is the CSS subgrid and how it differs from a nested g
 date:   2020-09-21
 background: /img/bg/post-bg/css-subgrid-vs-nested-grid.png
 ---
-<p>The <a href="https://caniuse.com/css-subgrid" target="_blank">CSS subgrid</a> is a new feature coming to browsers. It's already supported by Firefox, but the Chromium team is also <a href="https://blog.chromium.org/2020/06/improving-chromiums-browser.html" target="_blank">working on the implementation</a>. The CSS subgrid allows grid items to adopt the grid tracks and grid lines of the grid container, but only for the area they're spanning over.</p> 
+<p>The <a href="https://caniuse.com/css-subgrid" target="_blank">CSS subgrid</a> is a new feature coming to browsers. It's already supported by Firefox, but the Chromium team is also <a href="https://blog.chromium.org/2020/06/improving-chromiums-browser.html" target="_blank">working on the implementation</a>. The CSS subgrid allows grid items to adopt the grid tracks and grid lines for the area they're spanning over. 
+Obviously, the subgrid only makes sense if the grid item spans over more than one grid cells (you can achieve that using the <code>grid-column</code> and <code>grid-row</code> properties, or by creating named grid areas).</p> 
 <p>By default, the children of grid items are not part of the grid layout, so without a subgrid feature, you need to create a nested grid and recalculate the grid tracks if you want to use the same grid layout for one or more grid items — 
 	however a nested grid and a subgrid are still not the same thing.</p>
 <h2>What is CSS subgrid?</h2>
