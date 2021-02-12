@@ -1,0 +1,36 @@
+:root { 
+    font-size: 16px;
+ }
+ body {
+   font-family: sans-serif;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ .container {
+   display: grid;
+   grid-template-columns: 1fr min(80%, 43.75rem) 1fr;
+ }
+ .container > :not(.full-bleed) {
+   grid-column: 2;
+ }
+ 
+ .full-bleed {
+   width: 100%;
+   grid-column: 1 / 4;
+ }
+ .quote-wrapper {
+   background: #111;
+ }
+ blockquote {
+   line-height: 1.6;
+   color: #fff;
+   font-size: 1.8rem;
+   margin: 0 auto;
+   width: min(80%, 43.75rem);
+   text-align: center;
+   padding: 3rem 1.5rem;
+ }
+ cite {
+   white-space: nowrap;
+ }
